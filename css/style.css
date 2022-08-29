@@ -32,6 +32,7 @@
 
 }   
 
+/* General */
 html, body {
     font-size: 16px;
     line-height: 1.5;
@@ -40,11 +41,12 @@ html, body {
     Color: var(--color-theme-dark);
 }
 
-    /*top-menu-top */
+    /*header-top */
 
 .header-top {
     background-color: var(--color-theme);
     color: var(--color-white);
+    height: 40px;
 }
 
     .header-top  .container {
@@ -55,15 +57,47 @@ html, body {
         padding: 0;
     }
 
-        .container .links a {
-            text-decoration: none;
-            color: var(--color-white);
+        .header-top .container .header-top-buttons {
+            display: flex;
         }
+
+        .header-top .container .dropdown-theme button {
+            color: var(--color-white);
+            background-color: var(--color-theme);
+            border: 0;
+        }
+
+        .header-top .container .dropdown-theme button:hover {
+            color: var(--color-theme-dark);
+        }
+
+            .header-top .container .dropdown-theme .dropdown-menu {
+                background-color: var(--color-theme);
+                border: 0;
+            }
+
+            .header-top .container .dropdown-theme .dropdown-menu .dropdown-item {
+                color: var(--color-white);
+            }
+
+            .header-top .container .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                color: var(--color-theme-dark);
+            }
 
         .header-top .container .links {
             display: flex;
             justify-content: space-between;
             width: 30rem;
+        }
+
+        .header-top .container .links a {
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .header-top .container .links a:hover {
+            cursor: pointer;
+            color: var(--color-theme-dark)
         }
 
             .header-top .container .links .link-text {
@@ -75,6 +109,5 @@ html, body {
             .header-top .container .links .link-icons {
                 display: flex;
                 justify-content: space-evenly;
-                width: 9rem;
-
+                width: 9rem; 
             }
