@@ -31,3 +31,50 @@
     --border-radius-rounded: 50%;
 
 }   
+
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    Color: var(--color-theme-dark);
+}
+
+    /*top-menu-top */
+
+.header-top {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+}
+
+    .header-top  .container {
+        height: 100%; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+        .container .links a {
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .header-top .container .links {
+            display: flex;
+            justify-content: space-between;
+            width: 30rem;
+        }
+
+            .header-top .container .links .link-text {
+                display:flex;
+                justify-content: space-evenly;
+                width: 20rem;
+            }
+
+            .header-top .container .links .link-icons {
+                display: flex;
+                justify-content: space-evenly;
+                width: 9rem;
+
+            }
