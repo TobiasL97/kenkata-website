@@ -9,8 +9,8 @@
     --color-gray-0: #F6F6F6;
     --color-gray-1: #EEEEEE;
     --color-gray-2: #E3E3E3;
-    --color-gray-4: #CCCCCC;
-    --color-gray-5: #AAAAAA;
+    --color-gray-3: #CCCCCC;
+    --color-gray-4: #AAAAAA;
     --color-product-instock: #82D8C6;
     --color-product-outofstock: #FE6C6C;
 
@@ -46,7 +46,7 @@ html, body {
 .header-top {
     background-color: var(--color-theme);
     color: var(--color-white);
-    height: 40px;
+    padding: 0.4rem 0;
 }
 
     .header-top > .container {
@@ -59,13 +59,15 @@ html, body {
 
         .header-top .header-top-buttons {
             display: flex;
+            padding: 0;
         }
 
             .header-top .header-top-buttons .dropdown-theme button {
                 color: var(--color-white);
                 background-color: var(--color-theme);
-                border: 0;
+                border: none;
                 width: 5rem;
+                padding: 0;
             }
 
             .header-top .header-top-buttons .dropdown-theme button:hover {
@@ -115,7 +117,6 @@ html, body {
             .header-top .links .link-icons {
                 display: flex;
                 justify-content: space-between;
-                width: 9rem;
             }
 
 
@@ -127,10 +128,11 @@ html, body {
         display: none;
     }
 
-/* top-menu- middle */
+/* header-middle */
 
 .header-middle {
     padding: 2rem 0;
+    border-bottom: 1px solid var(--color-gray-2)
 }
 
     .header-middle > .container {
@@ -138,7 +140,7 @@ html, body {
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding: 0;
+        padding-right: 0;
     }
 
     .header-middle .kenkata-logo {
@@ -154,29 +156,109 @@ html, body {
     .header-middle .header-middle-icons {
         display: flex;
         justify-content: end;
-        flex: 1;
+        flex: 2;
         padding: 0;
     }
 
-        .header-middle .header-middle-icons a {
+        .header-middle .header-middle-icons .user-icons {
             color: var(--color-theme-dark);
-            text-decoration: 0;
-            margin: 0 0.4rem;
+            text-decoration: none;
+            margin: 0 0.8rem;
         }
 
-        .header-middle .header-middle-icons a:hover {
+        .header-middle .header-middle-icons .user-icons:hover {
             color: var(--color-theme);
         }
+
+        .header-middle .header-middle-icons .user-icons:nth-child(2) {
+            margin: 0 0.5rem 0 1.5rem;
+        }
+
+
+        .header-middle .header-middle-icons .user-icons:last-child {
+            margin: 0 0 0 0.5rem;
+        }
         
-        .header-middle .header-middle-icons i {
+        .header-middle .header-middle-icons .user-icons i {
             font-size: 1.2em;
         }
 
+    .header-middle .search-bar {
+        display: none;
+    }
+    
+    .header-middle .header-middle-icons {
+        display: none;
+    }
+
+    /* Header-bottom */
+
+    .header-bottom > .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-browse button {
+        color: var(--color-white);
+        background-color: var(--color-theme);
+        width: 15rem;
+        padding: 0.7rem 0.5rem 0.7rem 0rem;
+        border: none;
+    }
+
+    .dropdown-browse button:hover {
+        cursor: pointer;
+        color: var(--color-theme-dark);
+    }
+
+    .dropdown-browse .browse-icon {
+        color: var(--color-white); 
+        margin: 0 1rem 0 0rem; 
+    }
+
+    .dropdown-browse .browse-arrow {
+        color: var(--color-white);
+        margin: 0 0rem 0 2rem;  
+    }
+
+    .dropdown-browse .browse-menu {
+        background-color: var(--color-theme);
+        width: 15rem;
+    }
+
+    .dropdown-browse .browse-menu a {
+        color: var(--color-white);
+    }
+
+    .dropdown-browse .browse-menu a:hover {
+        color: var(--color-theme-dark);
+        background-color: var(--color-theme);
+        cursor: pointer
+    }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .header-middle .header-middle-icons {
+        display: flex;
+        justify-content: end;
+        flex: 2;
+        padding: 0;
+    }
+}    
 
 
 @media (min-width: 768px) {
@@ -199,5 +281,9 @@ html, body {
         display: flex;
         justify-content: space-between;
         width: 9rem;
+    }
+
+    .header-middle .search-bar {
+        
     }
 }
