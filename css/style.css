@@ -49,7 +49,7 @@ html, body {
     height: 40px;
 }
 
-    .header-top  .container {
+    .header-top > .container {
         height: 100%; 
         display: flex;
         justify-content: space-between;
@@ -57,57 +57,147 @@ html, body {
         padding: 0;
     }
 
-        .header-top .container .header-top-buttons {
+        .header-top .header-top-buttons {
             display: flex;
         }
 
-        .header-top .container .dropdown-theme button {
-            color: var(--color-white);
-            background-color: var(--color-theme);
-            border: 0;
-        }
+            .header-top .header-top-buttons .dropdown-theme button {
+                color: var(--color-white);
+                background-color: var(--color-theme);
+                border: 0;
+                width: 5rem;
+            }
 
-        .header-top .container .dropdown-theme button:hover {
-            color: var(--color-theme-dark);
-        }
+            .header-top .header-top-buttons .dropdown-theme button:hover {
+                color: var(--color-theme-dark);
+            }
 
-            .header-top .container .dropdown-theme .dropdown-menu {
+            .header-top .header-top-buttons .dropdown-theme .dropdown-menu {
                 background-color: var(--color-theme);
                 border: 0;
             }
 
-            .header-top .container .dropdown-theme .dropdown-menu .dropdown-item {
+            .header-top .dropdown-theme .dropdown-menu .dropdown-item {
                 color: var(--color-white);
             }
 
-            .header-top .container .dropdown-theme .dropdown-menu .dropdown-item:hover {
+            .header-top .dropdown-theme .dropdown-menu .dropdown-item:hover {
                 color: var(--color-theme-dark);
             }
 
-        .header-top .container .links {
-            display: flex;
-            justify-content: space-between;
-            width: 30rem;
-        }
+    .header-top .links {
+        display: flex;
+        justify-content: space-between;
+        width: 25rem;
+    }
 
-        .header-top .container .links a {
+        .header-top .links a {
             text-decoration: none;
             color: var(--color-white);
         }
 
-        .header-top .container .links a:hover {
+        .header-top .links a:hover {
             cursor: pointer;
             color: var(--color-theme-dark)
         }
 
-            .header-top .container .links .link-text {
+            .header-top .links .link-text {
+                width: 20rem;
+                justify-content: space-between;
+            }
+
+            .header-top .links .link-text {
                 display:flex;
                 justify-content: space-evenly;
                 width: 20rem;
             }
 
-            .header-top .container .links .link-icons {
+            .header-top .links .link-icons {
                 display: flex;
-                justify-content: space-evenly;
-                width: 9rem; 
+                justify-content: space-between;
+                width: 9rem;
             }
+
+
+    .header-top .links .link-icons {
+        display: none;
+    }
+    
+    .header-top .links .link-text {
+        display: none;
+    }
+
+/* top-menu- middle */
+
+.header-middle {
+    padding: 2rem 0;
+}
+
+    .header-middle > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    .header-middle .kenkata-logo {
+        flex: 1;
+    }
+
+    .header-middle .search-bar {
+        display: flex;
+        justify-content: center;
+        flex: 2;
+    }
+
+    .header-middle .header-middle-icons {
+        display: flex;
+        justify-content: end;
+        flex: 1;
+        padding: 0;
+    }
+
+        .header-middle .header-middle-icons a {
+            color: var(--color-theme-dark);
+            text-decoration: 0;
+            margin: 0 0.4rem;
+        }
+
+        .header-middle .header-middle-icons a:hover {
+            color: var(--color-theme);
+        }
+        
+        .header-middle .header-middle-icons i {
+            font-size: 1.2em;
+        }
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .header-top .links .link-text {
+        display:flex;
+        justify-content: space-evenly;
+        width: 20rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .header-top  .container {
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .header-top .links .link-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 9rem;
+    }
+}
