@@ -54,12 +54,28 @@ html, body {
         color: var(--color-white);
     }
 
+.button-theme-light {
+    color: var(--color-theme);
+    background-color: var(--color-white);
+    border: none;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-medium);
+    padding: 0.8rem 1.5rem;
+}
+
+    .button-theme-light:hover {
+        color: var(--color-white);
+        background-color: var(--color-theme-dark);
+    }
+
     /*header-top */
 
 .header-top {
     background-color: var(--color-theme);
     color: var(--color-white);
     padding: 0.45rem 0;
+    width: 100%;
 }
 
     .header-top > .container {
@@ -140,6 +156,7 @@ html, body {
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        padding-left: 0;
     }
 
     .header-middle .kenkata-logo {
@@ -147,7 +164,6 @@ html, body {
     }
 
     .header-middle .search-bar {
-        justify-content: center;
         flex: 4;
     }
 
@@ -167,19 +183,39 @@ html, body {
             color: var(--color-theme);
         }
 
+        .header-middle .header-middle-icons .user-icons:first-child span {
+                display: none;
+            }
+
+        .header-middle .header-middle-icons .user-icons:first-child i {
+            margin: 0 0.3rem 0 0rem;
+            }
+
         .header-middle .header-middle-icons .user-icons:nth-child(2) {
             margin: 0 0.5rem 0 1.5rem;
+            display: none;
+        }
+
+        .header-middle .header-middle-icons .user-icons:nth-child(3) {
+            display: none;
         }
 
 
         .header-middle .header-middle-icons .user-icons:last-child {
             margin: 0 0 0 0.5rem;
         }
+
+        .header-middle .header-middle-icons .user-icons:last-child span {
+            display: none;
+        }
         
         .header-middle .header-middle-icons .user-icons i {
             font-size: 1.2em;
         }
 
+    .header-middle .search-bar {
+        display: none;
+    }
 
     /* Header-bottom */
 
@@ -191,22 +227,24 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 0;
     }
 
         .header-bottom .dropdown-browse {
-            flex: 2;
+
         }
 
             .header-bottom .dropdown-browse button {
                 color: var(--color-white);
                 background-color: var(--color-theme);
-                width: 100%;
+                width: 18rem;
                 border: none;
                 font-size: 1rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0.7rem 1rem;
+                margin-left: 0;
             }
 
             .header-bottom .dropdown-browse button:hover {
@@ -238,11 +276,51 @@ html, body {
                     color: var(--color-theme-dark);
                 }
 
-        .header-bottom .special-offer {
-            flex: 7;
-            display: flex;
-            justify-content: end;
-            align-items: center;
+    .header-bottom .special-offer {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        display: none;
+    }
+
+    /* showcase section */
+
+.showcase {
+    background-color: var(--color-gray-1);
+}
+
+    
+    .showcase > .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .showcase .showcase-body h1 {
+            font-size: var(--font-size-36);
+            font-weight: var(--font-weight-regular);
+            font-family: var(--font-play);
+            text-align: center;
+        }
+
+        .showcase .showcase-body span {
+            display: block;
+            color: var(--color-theme);
+            font-size: var(--font-size-36);
+            font-weight: var(--font-weight-bold);
+            font-family: var(--font-play);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .showcase .showcase-body p {
+            font-size: 1em;
+            margin-bottom: 3rem;
+            display: none;
+        }
+
+        .showcase .showcase-image{
+            display: none;
         }
 
 
@@ -251,23 +329,57 @@ html, body {
 
 
 
-
-
-
-
-
-
-
 @media (min-width: 576px) {
+
     .header-top .social-media {
         display: inline;
+    }
+
+    .header-bottom .special-offer {
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-middle .header-middle-icons .user-icons:first-child span {
+        display: inline;
+    }
+
+    .header-middle .header-middle-icons .user-icons:last-child span {
+        display: inline;
+    }
+
+    .showcase .showcase-body p {
+        display: block;
     }
 }    
 
 
 @media (min-width: 768px) {
 
+    .header-middle .header-middle-icons .user-icons:nth-child(2) {
+        display: inline;
+    }
 
+    .header-middle .header-middle-icons .user-icons:nth-child(3) {
+        display: inline;
+    }
+
+    .header-middle .header-middle-icons .user-icons:last-child span {
+        display: inline;
+    }
+
+    .header-middle .header-middle-icons .user-icons:first-child span {
+        display: inline;
+    }
+
+    .showcase .showcase-body h1 {
+        font-size: var(--font-size-60);
+    }
+
+    .showcase .showcase-body span {
+        font-size: var(--font-size-60);
+
+    }
 }
 
 @media (min-width: 992px) {
@@ -279,4 +391,40 @@ html, body {
     .header-top .website-links {
         display: inline;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .header-middle .search-bar {
+        display: inline;
+    }
+
+    .showcase > .container {
+        justify-content: space-between;
+    }  
+
+    .showcase .showcase-image {
+        display: block;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .header-middle .header-middle-icons .user-icons:last-child{
+        font-size: var(--font-size-14);
+    }
+
+    .header-middle .header-middle-icons .user-icons:first-child {
+        font-size: var(--font-size-14);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-middle .header-middle-icons {
+        padding-right: 3rem;
+    }
+
+    .header-middle .header-middle-icons .user-icons:first-child i {
+        margin: 0 1.3rem 0 0;
+        }
 }
