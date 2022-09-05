@@ -1,0 +1,48 @@
+.showcase {
+    background-color: var(--color-gray-1);
+}
+
+    
+    .showcase > .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+        .showcase .showcase-body h1 {
+            font-size: var(--font-size-60);
+            font-weight: var(--font-weight-regular);
+            font-family: var(--font-play);
+        }
+
+        .showcase .showcase-body strong {
+            display: block;
+            color: var(--color-theme);
+            font-size: var(--font-size-60);
+            font-family: var(--font-play);
+            margin-bottom: 2rem;
+        }
+
+        .showcase .showcase-body p {
+            font-size: 1em;
+            font-weight: var(--font-weight-regular);
+            margin-bottom: 3rem;
+            display: none;
+        }
+
+        .showcase .showcase-image{
+            display: none;
+        }
+
+
+
+
+
+        .showcase .showcase-body h1 {
+            font-size: 3.5rem;
+        }
+        
+        .showcase .showcase-body strong {
+            font-size: 3.5rem;
+    
+        }    

@@ -83,6 +83,7 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0;
     }
 
         .header-top .header-top-buttons {
@@ -156,7 +157,7 @@ html, body {
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding-left: 0;
+        padding: 0;
     }
 
     .header-middle .kenkata-logo {
@@ -227,12 +228,8 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 0;
+        padding: 0;
     }
-
-        .header-bottom .dropdown-browse {
-
-        }
 
             .header-bottom .dropdown-browse button {
                 color: var(--color-white);
@@ -289,44 +286,56 @@ html, body {
     background-color: var(--color-gray-1);
 }
 
-    
     .showcase > .container {
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
     }
 
         .showcase .showcase-body h1 {
-            font-size: var(--font-size-36);
+            font-size: 3rem;
             font-weight: var(--font-weight-regular);
             font-family: var(--font-play);
-            text-align: center;
         }
 
-        .showcase .showcase-body span {
+        .showcase .showcase-body strong {
             display: block;
             color: var(--color-theme);
-            font-size: var(--font-size-36);
-            font-weight: var(--font-weight-bold);
+            font-size: 3rem;
             font-family: var(--font-play);
             margin-bottom: 2rem;
-            text-align: center;
         }
 
         .showcase .showcase-body p {
-            font-size: 1em;
+            font-size: 1rem;
+            font-weight: var(--font-weight-regular);
             margin-bottom: 3rem;
             display: none;
         }
 
-        .showcase .showcase-image{
-            display: none;
+        .showcase .showcase-body > .button-theme-light {
+            margin-bottom: 1rem;
         }
 
+    .showcase .showcase-image{
+        display: none;
+        width: 50%;
+    }
 
 
+@media (min-width: 360px) {
 
+    .showcase .showcase-body h1 {
+        font-size: 3.5rem;
+    }
+    
+    .showcase .showcase-body strong {
+        font-size: 3.5rem;
 
+    }    
+}
 
 
 @media (min-width: 576px) {
@@ -348,9 +357,6 @@ html, body {
         display: inline;
     }
 
-    .showcase .showcase-body p {
-        display: block;
-    }
 }    
 
 
@@ -372,13 +378,28 @@ html, body {
         display: inline;
     }
 
-    .showcase .showcase-body h1 {
-        font-size: var(--font-size-60);
+    .showcase > .container {
+        justify-content: space-between;
+        text-align: start;
+
     }
 
-    .showcase .showcase-body span {
-        font-size: var(--font-size-60);
+    .showcase .showcase-body h1 {
+        font-size: 4rem;
+    }
+    
+    .showcase .showcase-body strong {
+        font-size: 4rem;
 
+    }    
+
+    .showcase .showcase-body p {
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    .showcase .showcase-image{
+        display: block;
     }
 }
 
@@ -391,20 +412,25 @@ html, body {
     .header-top .website-links {
         display: inline;
     }
+
+    .showcase .showcase-body h1 {
+        font-size: var(--font-size-60);
+    }
+
+    .showcase .showcase-body strong {
+        font-size: var(--font-size-60);
+    }
+
+    .showcase .showcase-body p {
+        font-size: 1rem;
+
+    }
 }
 
 @media (min-width: 1200px) {
 
     .header-middle .search-bar {
         display: inline;
-    }
-
-    .showcase > .container {
-        justify-content: space-between;
-    }  
-
-    .showcase .showcase-image {
-        display: block;
     }
 }
 
@@ -427,4 +453,12 @@ html, body {
     .header-middle .header-middle-icons .user-icons:first-child i {
         margin: 0 1.3rem 0 0;
         }
+
+
+}
+
+
+
+@media (max-width: 1200px) {
+
 }
