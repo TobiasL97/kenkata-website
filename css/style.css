@@ -324,6 +324,59 @@ html, body {
         width: 50%;
     }
 
+    /* Website info section */
+
+.website-info > .container {
+    max-width: 1650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+}
+
+    .website-info .website-info-box {
+        display: flex;
+        background-color: var(--color-theme-light);
+        border-radius: var(--border-radius-small);
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        margin: 0 1rem;
+        
+    }
+
+        .website-info .website-info-box img {
+            padding-left: 0.5rem;
+            margin-right: 2rem;            
+        }
+
+        .website-info .website-info-box h1 {
+            font-size: 1rem;
+            font-weight: var(--font-weight-medium);
+            font-family: var(--font-roboto);
+            color: var(--color-theme);
+        }
+
+        .website-info .website-info-box p {
+            font-size: 0.9rem;
+            font-weight: var(--font-weight-regular);
+            font-family: var(--font-roboto);
+        }
+
+        .website-info .website-info-box:hover {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            cursor: pointer;
+        }
+
+        .website-info .website-info-box:hover h1 {
+            color: var(--color-white);
+        }
+
+        .website-info .website-info-box:hover img {
+            filter: brightness(1000%);
+        }
+
+
+
+
 
 @media (min-width: 360px) {
 
