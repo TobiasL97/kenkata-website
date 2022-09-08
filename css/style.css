@@ -41,6 +41,7 @@ html, body {
     Color: var(--color-theme-dark);
 }
 
+
 .button-theme {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -198,13 +199,14 @@ html, body {
     .header-middle .header-middle-icons {
         display: flex;
         justify-content: end;
+        align-items: center;
         flex: 3;
+        display: none;
     }
 
         .header-middle .header-middle-icons .user-icons {
             color: var(--color-theme-dark);
             text-decoration: none;
-            margin: 0 0.8rem;
         }
 
         .header-middle .header-middle-icons .user-icons:hover {
@@ -216,7 +218,8 @@ html, body {
             }
 
         .header-middle .header-middle-icons .user-icons:first-child i {
-            margin: 0 0.3rem 0 0rem;
+                margin: 0 1rem 0 0rem;
+                font-size: var(--font-size-16);
             }
 
         .header-middle .header-middle-icons .user-icons:nth-child(2) {
@@ -233,12 +236,17 @@ html, body {
             margin: 0 0 0 0.5rem;
         }
 
+        .header-middle .header-middle-icons .user-icons:last-child i {
+            margin: 0 1rem 0 0.5rem;
+            font-size: var(--font-size-16);
+        }
+
         .header-middle .header-middle-icons .user-icons:last-child span {
             display: none;
         }
         
         .header-middle .header-middle-icons .user-icons i {
-            font-size: 1.2em;
+            font-size: var(--font-size-14);
         }
 
         .header-middle .header-middle-icons #cart {
@@ -247,8 +255,8 @@ html, body {
 
             .header-middle .header-middle-icons #cart .badge {
                 position: absolute;
-                top: -1.2rem;
-                left: 0.8rem;
+                top: -1.3rem;
+                left: 1.5rem;
                 background-color: var(--color-theme);
             }
 
@@ -496,7 +504,11 @@ html, body {
 
         /* Min media */
 
-
+@media (min-width: 330px) {
+    .header-middle .header-middle-icons {
+        display: flex;
+    }
+}
 
 @media (min-width: 450px) {
 
@@ -522,12 +534,30 @@ html, body {
         justify-content: end;
     }
 
+    .header-middle .header-middle-icons .user-icons:first-child i {
+        font-size: var(--font-size-14);
+        margin: 0 0.5rem 0 0rem;
+    }
+
+    .header-middle .header-middle-icons .user-icons:nth-child(2) {
+        margin: 0 1.2rem 0 2rem;
+    }
+
+    .header-middle .header-middle-icons .user-icons:last-child i {
+        font-size: var(--font-size-14);
+        margin: 0 0.1rem 0 1.2rem;
+    }
+
     .header-middle .header-middle-icons .user-icons:first-child span {
         display: inline;
     }
 
     .header-middle .header-middle-icons .user-icons:last-child span {
         display: inline;
+    }
+
+    .header-middle .header-middle-icons .user-icons:last-child {
+        margin: 0;
     }
 
     .website-info .website-info-box {
@@ -789,13 +819,6 @@ html, body {
 }
 
 @media (max-width: 576px) {
-    .header-middle .header-middle-icons .user-icons:last-child{
-        font-size: var(--font-size-14);
-    }
-
-    .header-middle .header-middle-icons .user-icons:first-child {
-        font-size: var(--font-size-14);
-    }
 
     .shop-by-category .container > .section-title {
         color: var(--color-theme-dark);
@@ -803,29 +826,9 @@ html, body {
         padding: 3rem 0 1rem 0;
     }
 
-}
-
-@media (max-width: 768px) {
-    .header-middle .header-middle-icons {
-        padding-right: 3rem;
-    }
-
-    .header-middle .header-middle-icons .user-icons:first-child i {
-        margin: 0 1.3rem 0 0;
-        }
-
     .website-info .website-info-box img {
         margin-right: 0.5rem;
         width: 2rem;
     }
 
 }
-
-
-
-@media (max-width: 1200px) {
-
-}
-
-
-

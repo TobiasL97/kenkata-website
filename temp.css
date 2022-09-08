@@ -170,3 +170,29 @@
             font-size: 1.2em;
             padding: 0 1.2rem 0 0;
         }
+
+
+
+
+
+
+        .header-middle > .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+    
+        .header-middle .kenkata-logo {
+            flex: 2;
+        }
+    
+        .header-middle .search-bar {
+            flex: 4;
+        }
+    
+        .header-middle .header-middle-icons {
+            display: flex;
+            justify-content: end;
+            flex: 3;
+        }
