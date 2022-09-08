@@ -32,10 +32,6 @@
 
 }   
 
-* {
-    box-sizing: border-box;
-}
-
 /* General */
 html, body {
     font-size: 16px;
@@ -189,7 +185,6 @@ html, body {
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding: 0;
     }
 
     .header-middle .kenkata-logo {
@@ -281,9 +276,8 @@ html, body {
             .header-bottom .dropdown-browse button {
                 color: var(--color-white);
                 background-color: var(--color-theme);
-                width: 18rem;
                 border: none;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -299,6 +293,7 @@ html, body {
             .header-bottom .dropdown-browse button span {
                 display: flex;
                 align-items: center;
+                margin-right: 1rem;
             }
 
             .header-bottom .dropdown-browse button > span > i {
@@ -342,7 +337,7 @@ html, body {
     }
 
         .showcase .showcase-body h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: var(--font-weight-regular);
             font-family: var(--font-play);
         }
@@ -354,7 +349,7 @@ html, body {
         .showcase .showcase-body strong {
             display: block;
             color: var(--color-theme);
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-family: var(--font-play);
             margin-bottom: 2rem;
         }
@@ -426,7 +421,19 @@ html, body {
 
 
         /* Shop-by-category */
-        
+  
+        .shop-by-category .section-title p {
+            display: none;
+        }
+
+        .shop-by-category .section-title h1 {
+            font-size: 1.5rem;
+        }
+
+        .shop-by-category .section-title img {
+            display: none;
+        }
+
     .shop-by-category .shop-by-category-dropdown {
         display: flex;
         justify-content: center;
@@ -435,14 +442,17 @@ html, body {
     .shop-by-category .shop-by-category-dropdown button {
         color: var(--color-white);
         background-color: var(--color-theme);
-        width: 18rem;
         border: none;
         font-size: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.7rem 1rem;
-        margin-left: 0;
+        border-radius: var(--border-radius-small);
+    }
+
+    .shop-by-category .shop-by-category-dropdown span i {
+        margin: 0 0 0 1rem;
     }
 
     .shop-by-category .grid {
@@ -486,22 +496,20 @@ html, body {
 
         /* Min media */
 
-@media (min-width: 360px) {
+
+
+@media (min-width: 450px) {
 
     .showcase .showcase-body h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     
     .showcase .showcase-body strong {
-        font-size: 3.5rem;
+        font-size: 3rem;
 
     }    
 
 }
-
-
-
-
 
 @media (min-width: 576px) {
 
@@ -542,6 +550,10 @@ html, body {
         font-size: 1rem;
     }
 
+    .shop-by-category .section-title img {
+        display: inline;
+    }
+
     .shop-by-category .shop-by-category-dropdown button {
         display: none;
     }
@@ -549,7 +561,11 @@ html, body {
     .shop-by-category .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, minmax(100px, 249px));
+        grid-template-rows: repeat(4, minmax(100px, 249px));
+    }
+
+    .header-middle > .container {
+        padding: 0;
     }
 }    
 
@@ -572,6 +588,10 @@ html, body {
         display: inline;
     }
 
+    .header-bottom .dropdown-browse button {
+        width: 18rem;
+    }
+
     .showcase > .container {
         justify-content: space-between;
         text-align: start;
@@ -588,8 +608,8 @@ html, body {
     }    
 
     .showcase .showcase-body p {
+        font-size: 0.8rem;
         display: block;
-        font-size: var(--font-size-16);
     }
 
     .showcase .showcase-image{
@@ -604,6 +624,10 @@ html, body {
         width: 3rem;
         margin-right: 0.5rem;
 
+    }
+
+    .shop-by-category .section-title h1 {
+        font-size: 2.25rem;
     }
 
 }
@@ -652,6 +676,7 @@ html, body {
 
     .shop-by-category .grid {
         grid-template-columns: repeat(5, minmax(100px, 249px));
+        grid-template-rows: repeat(3, minmax(100px, 249px));
     }
 
     #category-box-1 {
@@ -770,6 +795,12 @@ html, body {
 
     .header-middle .header-middle-icons .user-icons:first-child {
         font-size: var(--font-size-14);
+    }
+
+    .shop-by-category .container > .section-title {
+        color: var(--color-theme-dark);
+        text-align: center;
+        padding: 3rem 0 1rem 0;
     }
 
 }
