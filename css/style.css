@@ -63,6 +63,7 @@ html, body {
     font-weight: var(--font-weight-medium);
     border-radius: var(--border-radius-medium);
     padding: 0.8rem 1.5rem;
+
 }
 
     .button-theme-light:hover {
@@ -124,6 +125,7 @@ html, body {
                 background-color: var(--color-theme);
                 border: none;
                 width: 5rem;
+                transition: color 0.3s;
             }
 
             .header-top .header-top-buttons .dropdown-theme button:hover {
@@ -137,16 +139,19 @@ html, body {
 
             .header-top .dropdown-theme .dropdown-menu .dropdown-item {
                 color: var(--color-white);
+                transition: 0.3s;
             }
 
             .header-top .dropdown-theme .dropdown-menu .dropdown-item:hover {
                 color: var(--color-theme-dark);
+                background-color: var(--color-theme);
             }
     
     .header-top .links a {
         color: var(--color-white);
         text-decoration: none;
         margin: 0 1.2rem;
+        transition: 0.3s;
     }
     
     .header-top .links a:hover {
@@ -207,6 +212,7 @@ html, body {
         .header-middle .header-middle-icons .user-icons {
             color: var(--color-theme-dark);
             text-decoration: none;
+            transition: 0.2s;
         }
 
         .header-middle .header-middle-icons .user-icons:hover {
@@ -258,6 +264,7 @@ html, body {
                 top: -1.3rem;
                 left: 1.5rem;
                 background-color: var(--color-theme);
+                transition: 0.2s;
             }
 
                 .header-middle .header-middle-icons #cart:hover .badge {
@@ -291,6 +298,7 @@ html, body {
                 align-items: center;
                 padding: 0.7rem 1rem;
                 margin-left: 0;
+                transition: background-color 0.3s;
             }
 
             .header-bottom .dropdown-browse button:hover {
@@ -316,6 +324,7 @@ html, body {
             
                 .header-bottom .dropdown-browse .browse-menu .dropdown-item {
                     color: var(--color-white);
+                    transition: background-color 0.3s;
                 }
 
                 .header-bottom .dropdown-browse .browse-menu .dropdown-item:hover {
@@ -392,17 +401,28 @@ html, body {
         border-radius: var(--border-radius-small);
         margin: 0 0.5rem;
         vertical-align: center;
+        transition: 0.3s;
     }
 
         .website-info .website-info-box img {
             margin-bottom: 0.5rem;
             display: none;
+            transition: 0.3s;
+        }
+
+        .website-info .website-info-box:hover img {
+            filter: brightness(1000%);
         }
 
         .website-info .website-info-box h1 {
             font-size: 0.8rem;
             font-weight: var(--font-weight-medium);
             font-family: var(--font-roboto);
+            color: var(--color-theme);
+            transition: 0.3s;
+        }
+
+        .website-info .website-info-box:hover h1 {
             color: var(--color-theme);
         }
 
@@ -411,6 +431,11 @@ html, body {
             font-weight: var(--font-weight-regular);
             font-family: var(--font-roboto);
             display: none;
+            transition: 0.1s;
+        }
+
+        .website-info .website-info-box:hover p {
+            color: var(--color-white);
         }
 
         .website-info .website-info-box:hover img {
@@ -504,6 +529,7 @@ html, body {
             padding: 0.5rem 1rem;
             width: 50%;
             height: 2.3rem;
+            transition: height 0.3s;
         }
 
         .shop-by-category .category-box:hover .category-box-title {
