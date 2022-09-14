@@ -71,6 +71,22 @@ html, body {
         background-color: var(--color-theme-dark);
     }
 
+    .button-theme-dark {
+        color: var(--color-white);
+        background-color: var(--color-theme-dark);
+        border: none;
+        font-size: 1rem;
+        font-weight: var(--font-weight-medium);
+        border-radius: var(--border-radius-medium);
+        padding: 0.8rem 1.5rem;
+    
+    }
+    
+        .button-theme-dark:hover {
+            color: var(--color-white);
+            background-color: var(--color-theme-dark);
+        }
+
 .bg-theme {
     background-color: var(--color-theme);
 }
@@ -336,7 +352,7 @@ html, body {
             
                 .header-bottom .dropdown-browse .browse-menu .dropdown-item {
                     color: var(--color-white);
-                    transition: background-color 0.3s;
+                    transition: color 0.3s;
                 }
 
                 .header-bottom .dropdown-browse .browse-menu .dropdown-item:hover {
@@ -501,6 +517,7 @@ html, body {
         .shop-by-category .shop-by-category-dropdown > .browse-menu {
             background-color: var(--color-theme);
             text-align: center;
+            transition: all 0.3s ease-in-out;
         }
 
             .shop-by-category .shop-by-category-dropdown > .browse-menu .dropdown-item {
@@ -558,7 +575,11 @@ html, body {
 
 
         /* New Arrivals section */
-    
+
+.new-arrivals-cards {
+    margin-bottom: 10rem;
+}
+        
     .new-arrivals .section-title h1 {
         font-size: 1.5rem;
     }
@@ -681,6 +702,118 @@ html, body {
             .new-arrivals-cards .card:hover .card-background {
                 height: 100%;
             }
+
+        /* New-customer-info-section */
+.new-customer-info {
+    background-color: var(--color-gray-3);
+}
+
+    .new-customer-info > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .new-customer-info .container .new-customer {
+            background-color: var(--color-theme);
+            padding: 7rem 1.568rem;
+            color: var(--color-white);
+            text-align: center;
+        }
+
+            .new-customer-info .container .new-customer h1 {
+                font-size: 3.75rem;
+                font-family: var(--font-play);
+                font-weight: bold;
+            }
+
+            .new-customer-info .container .new-customer span {
+                font-size: 2.25rem;
+            }
+
+            .new-customer-info .container .new-customer p {
+                font-size: 1rem;
+                font-weight: var(--font-weight-regular);
+                margin: 1rem 0 1rem 0;
+            }
+
+        .new-customer-info .container .new-customer-text {
+            width: 28rem;
+            color: var(--color-white);
+        }
+
+            .new-customer-info .container .new-customer-text p {
+                margin-bottom: 2rem;
+                font-size: 0.875rem;
+            }
+
+
+        /* Flash-sale-section */
+
+.flash-sale {
+    background-color: var(--color-theme-dark);
+}
+
+    .flash-sale > .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .flash-sale .container .flash-sale-banner {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            padding: 1.5rem 1.984rem;
+            margin-bottom: 12.438rem;
+            text-align: center;
+        }
+
+            .flash-sale .container .flash-sale-banner h1 {
+                font-size: 3.75rem;
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+            }
+
+            .flash-sale .container .flash-sale-banner span {
+                display: block;
+            }
+
+            .flash-sale .container .flash-sale-banner p {
+                font-size: 1.5rem;
+            }
+
+        .flash-sale .container .flash-sale-countdown {
+            display: flex;
+            background-color: var(--color-theme-dark);
+            height: 5rem;
+            position: relative;
+            top: 8rem;
+        }
+
+        .flash-sale-time {
+            margin: 0 1rem;
+            background-color: var(--color-white);
+            width: 6.813rem;
+            height: 6.813rem;
+            text-align: center;
+            border-radius: var(--border-radius-rounded);
+            border: 2px solid var(--color-theme);
+        }
+
+            .flash-sale-time h1 {
+                font-size: 2.25rem;
+                font-weight: var(--font-weight-bold);
+                font-family: var(--font-play);
+                color: var(--color-theme);
+                margin-top: 1rem;
+            }
+
+            .flash-sale-time p {
+               font-size: 1rem; 
+               font-family: var(--font-roboto);
+               margin: 0;
+            }
+
+
 
         /* Min media */
 
