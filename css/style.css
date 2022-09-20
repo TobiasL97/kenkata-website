@@ -816,9 +816,10 @@ html, body {
             }
 
             .flash-sale .container .flash-sale-countdown a {
-                position: absolute;
+                position: relative;
                 top: 9rem;
-                right: 13.7rem;
+                right: 22rem;
+                height: 3rem;
             }
 
             .flash-sale .container .flash-sale-countdown > .button-theme-light:hover {
