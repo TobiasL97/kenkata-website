@@ -241,6 +241,45 @@ html, body {
         flex: 4;
     }
 
+        .header-middle .search-bar #searchboxForm {
+            border-radius: var(--border-radius-medium);
+            height: 45px;
+            margin: auto;
+            position: relative;
+        }
+
+            .header-middle .search-bar #searchboxForm input {
+                position: absolute;
+                border-radius: var(--border-radius-medium);
+                height: 100%;
+                width: 100%;
+                border: 1px solid var(--color-gray-1);
+                font-size: 1rem;
+                padding-left: 1.3rem;
+            }
+
+            .header-middle .search-bar #searchboxForm input:focus {
+                outline: 0;
+                box-shadow: 0 0 1px 1px var(--color-gray-2);
+            }
+
+            .header-middle .search-bar #searchboxForm button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3.125rem;
+                height: 100%;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+                transition: 0.2s ease-in-out;
+            }
+
+            .header-middle .search-bar #searchboxForm button:hover {
+                background-color: var(--color-theme-dark);
+            }
+
     .header-middle .header-middle-icons {
         display: flex;
         justify-content: end;
@@ -310,10 +349,10 @@ html, body {
                 .header-middle .header-middle-icons #cart:hover .badge {
                     background-color: var(--color-theme-dark);
                 }
-
     .header-middle .search-bar {
         display: none;
-    }
+    }            
+
 
     /* Header-bottom */
 
