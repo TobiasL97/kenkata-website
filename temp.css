@@ -558,3 +558,140 @@
                         grid-column: 2 / -1;
                         grid-row: 2 / -1;
                     }  
+
+
+
+
+
+                    .subscribe-now .subscribe-box button {
+                        position: relative;
+                        top: 0.12rem;
+                        left: 22.4rem;
+                        background-color: var(--color-theme);
+                        color: var(--color-white);
+                        padding: 0.4rem 0.7rem;
+                        border: none;
+                        border-radius: var(--border-radius-medium);
+                        transition: 0.2s ease-in-out;
+                    }
+
+
+.flash-sale {
+    background-color: var(--color-theme-dark);
+    
+}
+
+    .flash-sale > .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+    }
+
+        .flash-sale .container .flash-sale-banner {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            padding: 1.5rem 2.4rem;
+            margin-bottom: 12.438rem;
+            text-align: center;
+        }
+
+        .flash-sale .container .flash-sale-banner h1 {
+            font-size: 3.75rem;
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+        }
+
+        .flash-sale .container .flash-sale-banner p {
+            font-size: 1.5rem;
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-medium);
+        }
+
+
+        .flash-sale-time {
+            display: inline-block;
+            margin: 0 0 0 2rem;
+            outline: 2px dashed var(--color-theme);
+            background-color: var(--color-white);
+            padding: 1rem;
+            text-align: center;
+            height: 6.813rem;
+            width: 6.813rem;
+            border-radius: 50%;
+        }
+
+            .flash-sale-time h1 {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-bold);
+                font-size: 2.25rem;
+                margin-bottom: 0;
+                margin-top: 0.2rem;
+            }
+
+            .flash-sale-time p {
+                color: var(--color-theme-dark);
+                font-weight: var(--font-weight-regular);
+                
+            }
+
+            .flash-sale-button {
+                padding-left: 2rem;
+                margin-top: 3rem;
+                text-align: center;
+            }
+
+                .flash-sale-button > .button-theme-light:hover {
+                    background-color: var(--color-theme);
+                }
+                    
+
+        /* new customer */
+
+        .new-customer-info {
+            background-color: var(--color-gray-3);
+        }
+        
+            .new-customer-info > .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+                .new-customer-info .container .new-customer {
+                    background-color: var(--color-theme);
+                    padding: 7rem 1.568rem;
+                    color: var(--color-white);
+                    text-align: center;
+                    
+                }
+        
+                    .new-customer-info .container .new-customer h1 {
+                        font-size: 3.75rem;
+                        font-family: var(--font-play);
+                        font-weight: bold;
+                    }
+        
+                    .new-customer-info .container .new-customer span {
+                        font-size: 2.25rem;
+                    }
+        
+                    .new-customer-info .container .new-customer p {
+                        font-size: 1rem;
+                        font-weight: var(--font-weight-regular);
+                        margin: 1rem 0 1rem 0;
+                    }
+        
+                .new-customer-info .container .new-customer-text {
+                    width: 28rem;
+                    color: var(--color-white);
+                    
+                }
+        
+                    .new-customer-info .container .new-customer-text p {
+                        margin-bottom: 2rem;
+                        font-size: 0.875rem;
+                        display: none;
+                    }
+        
+        
