@@ -1384,6 +1384,10 @@ html, body {
         display: inline;
     }
 
+    .header-middle .search-bar {
+        display: inline;
+    }
+
     .showcase .showcase-body h1 {
         font-size: var(--font-size-60);
     }
@@ -1540,10 +1544,6 @@ html, body {
 
 
 @media (min-width: 1200px) {
-
-    .header-middle .search-bar {
-        display: inline;
-    }
 
     .website-info .website-info-box p {
         font-size: 0.9rem;

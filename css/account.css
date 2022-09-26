@@ -532,7 +532,8 @@ html, body {
 
     .signup-signin .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33.438rem 56.938rem;
         align-items: start;
         gap: 2rem;
     }
@@ -564,6 +565,11 @@ html, body {
             font-weight: var(--font-weight-regular);
             color: var(--color-theme);
             text-decoration: none;
+            font-size: 0.6rem;
+        }
+
+        .form-theme .card .card-body .login-links label {
+            font-size: 0.7rem;
         }
 
         .form-theme .card .card-body .login-links a:hover {
@@ -575,30 +581,6 @@ html, body {
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
 }
-
-    .external-socialmedia-buttons .facebook-button button {
-        background-image: url(../images/facebook-login-button.svg);
-        background-repeat: no-repeat;
-        border: none;
-        height: 2.625rem;
-        width: 14.688rem;
-    }
-
-    .external-socialmedia-buttons .facebook-button {
-        text-align: left;
-    }
-
-    .external-socialmedia-buttons .google-button {
-        text-align: right;
-    }
-
-    .external-socialmedia-buttons .google-button button {
-        background-image: url(../images/google-login-button.svg);
-        background-repeat: no-repeat;
-        border: none;
-        height: 2.625rem;
-        width: 14.688rem;
-    }
 
 
 
@@ -817,6 +799,13 @@ html, body {
         .new-arrivals .section-title p {
             font-size: 1.33rem;
         }
+
+        .signup-signin .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+            gap: 2rem;
+        }
     
     }
     
@@ -900,6 +889,14 @@ html, body {
         #category-box-7 {
             grid-column: 5 / -1;
             grid-row: 3 / -1;
+        }
+
+        .form-theme .card .card-body .login-links a {
+            font-size: 1rem;
+        }
+
+        .form-theme .card .card-body .login-links label {
+            font-size: 1rem;
         }
     
     }
