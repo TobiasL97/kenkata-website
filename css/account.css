@@ -582,33 +582,43 @@ html, body {
     display: grid; 
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    justify-content: center;
 }
 
     .external-socialmedia-buttons .facebook-button {
+        display: flex;
         border: none; 
         border-radius: 0.313rem;
         background-color: #4267B2;
         color: var(--color-white);
         padding: 0.5rem 0.5rem;
-        text-align: start;
         text-decoration: 0;
     }
 
+    .external-socialmedia-buttons .facebook-button span {
+        margin: auto;
+    }
+
     .external-socialmedia-buttons .facebook-button img {
-        padding-right: 2.5rem;
+        margin-right: 0.5rem;
     }
 
     .external-socialmedia-buttons .google-button {
+        display: flex;
         border: none; 
         border-radius: 5px;
         background-color: #4285F4;
         color: var(--color-white);
         padding: 0.5rem 0.5rem;
-        text-align: start;
+        text-decoration: 0;
+    }
+
+    .external-socialmedia-buttons .google-button span {
+        margin: auto;
     }
 
     .external-socialmedia-buttons .google-button img {
-        padding-right: 3.3rem;
+        margin-right: 0.5rem;
     }
 
 
