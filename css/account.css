@@ -163,6 +163,7 @@ html, body {
         .form-theme .card .card-body .card-text {
             margin: 1.5rem 0;
             line-height: 2rem;
+            font-size: 0.8rem;
         }
 
         .form-theme .card .card-body .card-text a {
@@ -177,7 +178,7 @@ html, body {
 
         .form-theme .card .card-body .card-text.text-small {
             color: var(--color-gray-5);
-            font-size: 0.875rem;
+            font-size: 0.7rem;
         }
 
 .form-theme input[type=checkbox] {
@@ -423,6 +424,7 @@ html, body {
 .header-bottom {
     border-top: 1px solid var(--color-gray-2);
     border-bottom: 1px solid var(--color-gray-2);
+    display: none;
 }
     .header-bottom > .container {
         display: flex;
@@ -582,6 +584,32 @@ html, body {
     column-gap: 2rem;
 }
 
+    .external-socialmedia-buttons .facebook-button {
+        border: none; 
+        border-radius: 0.313rem;
+        background-color: #4267B2;
+        color: var(--color-white);
+        padding: 0.5rem 0.5rem;
+        text-align: start;
+        text-decoration: 0;
+    }
+
+    .external-socialmedia-buttons .facebook-button img {
+        padding-right: 2.5rem;
+    }
+
+    .external-socialmedia-buttons .google-button {
+        border: none; 
+        border-radius: 5px;
+        background-color: #4285F4;
+        color: var(--color-white);
+        padding: 0.5rem 0.5rem;
+        text-align: start;
+    }
+
+    .external-socialmedia-buttons .google-button img {
+        padding-right: 3.3rem;
+    }
 
 
 
@@ -801,10 +829,15 @@ html, body {
         }
 
         .signup-signin .container {
-            display: grid;
             grid-template-columns: 1fr 1fr;
-            align-items: start;
-            gap: 2rem;
+        }
+
+        .form-theme .card .card-body .card-text.text-small {
+            font-size: 0.875rem;
+        }
+
+        .form-theme .card .card-body .card-text {
+            font-size: 1rem;
         }
     
     }
