@@ -29,7 +29,6 @@
     --border-radius-small: 8px;
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
-
 }   
 
 /* General */
@@ -142,6 +141,83 @@ html, body {
     font-size: 1.5em;
     margin: 0;
 }
+
+    .card .card-menu {
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        right: 20px;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        border: 1px solid black;
+        font-size: 20px;
+        border-radius: 25px;
+        background-color: white;
+        transition: top 0.3s ease-in-out;
+    }
+
+    .card:hover .card-menu {
+        top: 1.25rem;
+    }
+
+        .card-menu li a {
+            color: var(--color-gray-4);
+            font-size: 1.125rem;
+        }
+
+        .card-menu li i {
+            font-size: 1.25rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .card-menu li:nth-child(3) {
+            display: none;
+        }
+
+        .card-menu li:last-child i {
+            font-size: 1.125rem;
+        }
+
+        .card-menu li a:hover{
+            color: var(--color-theme);
+        }
+
+        .card-menu li a::before,
+        .card-menu li a::after{
+            --scale: 0;
+            position: absolute;
+            transform: translateX(-115%) scale(var(--scale));
+            transition: 0.1s transform;
+            transform-origin: right center;
+        }
+
+        .card-menu li a::before{
+            content: attr(data-tooltip);
+            font-size: 0.875rem;
+            text-align: center;
+            width: 7rem;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border-radius: 0.3rem;
+            padding: 0.3rem;
+        }
+
+        .card-menu li a::after{
+            transform: translateX(-2.5rem) translateY(0.5rem) scale(var(--scale));
+            transform-origin: left center;
+            content: '';
+            width: 7px;
+            height: 7px;
+            border: 7px solid transparent;
+            border-left-color: var(--color-theme);
+        }
+
+        .card-menu li a:hover::before,
+        .card-menu li a:hover::after{
+            --scale: 1;
+        }
 
     /*header-top */
 
@@ -693,43 +769,6 @@ html, body {
                     margin: 0.5rem 0;
                 }
 
-        .new-arrivals-cards .card .card-menu {
-            position: absolute;
-            z-index: 1;
-            top: 101%;
-            right: 1rem;
-            list-style: none;
-            margin: auto;
-            padding: 0.5rem;
-            font-size: 1.25rem;
-            border-radius: var(--border-radius-medium);
-            background-color: var(--color-white);
-            transition: top 0.32s ease-in-out;
-        }
-
-            .new-arrivals-cards .card:hover .card-menu {
-                top: 20px;
-            }
-
-                .new-arrivals-cards .card .card-menu li:nth-child(4) {
-                    display: none;
-                }
-
-                .new-arrivals-cards .card .card-menu li:last-child {
-                    font-size: 1.125rem;
-                    
-                }
-
-                .new-arrivals-cards .card .card-menu li a {
-                    color: var(--color-gray-4);
-                    margin: 0;
-                    margin-top: 0.3rem;
-                    margin-bottom: 0.3rem;
-                }
-
-                    .new-arrivals-cards .card .card-menu li a:hover {
-                        color: var(--color-theme);
-                    }
 
         .new-arrivals-cards .card img {
             height: 100%;
@@ -913,48 +952,6 @@ html, body {
             .top-sellers .grid .card img {
                 height: 100%;
             }
-
-            .top-sellers .grid .card .card-menu {
-                position: absolute;
-                z-index: 1;
-                top: 100%;
-                right: 20px;
-                list-style: none;
-                margin: auto;
-                padding: 0.5rem;
-                border: 1px solid black;
-                font-size: 20px;
-                border-radius: 25px;
-                background-color: white;
-                transition: top 0.3s ease-in-out;
-            }
-
-            .top-sellers .grid .card:hover .card-menu {
-                top: 1.25rem;
-            }
-
-                .top-sellers .grid .card .card-menu li a {
-                    color: var(--color-gray-4);
-                    font-size: 1.125rem;
-                }
-
-                .top-sellers .grid .card .card-menu li i {
-                    font-size: 1.25rem;
-                    margin-top: 0.3rem;
-                    margin-bottom: 0.3rem;
-                }
-
-                .top-sellers .grid .card .card-menu li:nth-child(4) {
-                    display: none;
-                }
-
-                .top-sellers .grid .card .card-menu li:last-child i {
-                    font-size: 1.125rem;
-                }
-
-                .top-sellers .grid .card .card-menu li a:hover {
-                    color: var(--color-theme);
-                }
 
             .top-sellers .grid .card .card-body {
                 position: absolute;
@@ -1221,8 +1218,8 @@ html, body {
         grid-template-rows: repeat(2, minmax(100px, 350px));
     }
 
-    .top-sellers .grid .card .card-menu li:nth-child(4) {
-        display: inline;
+    .card .card-menu li:nth-child(3) {
+        display: block;
     }
 
     .top-sellers .section-title img {
@@ -1244,10 +1241,6 @@ html, body {
     .new-arrivals-cards .grid {
         grid-template-columns: repeat(2, minmax(100px, 300px));
         grid-template-rows: repeat(2, 350px);
-    }
-
-    .new-arrivals-cards .card .card-menu li:nth-child(4) {
-        display: inline;
     }
 
     .new-arrivals-cards .card .card-body h1 {
