@@ -637,12 +637,17 @@ html, body {
 
 
     @media (min-width: 330px) {
+
+            /* Header */
+
         .header-middle .header-middle-icons {
             display: flex;
         }
     }
     
     @media (min-width: 450px) {
+
+            /* Showcase */
     
         .showcase .showcase-body h1 {
             font-size: 3rem;
@@ -656,6 +661,8 @@ html, body {
     }
     
     @media (min-width: 576px) {
+
+            /* Header */
     
         .header-top .social-media {
             display: inline;
@@ -692,6 +699,8 @@ html, body {
             margin: 0;
         }
     
+            /*Website-info*/
+
         .website-info .website-info-box {
             background-color: var(--color-theme-light);
             padding: 0.2rem 0.2rem;
