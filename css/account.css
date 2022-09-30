@@ -667,6 +667,10 @@ html, body {
         .header-top .social-media {
             display: inline;
         }
+
+        .header-middle > .container {
+            padding: 0;
+        }
     
         .header-bottom .special-offer {
             display: flex;
@@ -730,6 +734,8 @@ html, body {
         .website-info .website-info-box h1 {
             font-size: 1rem;
         }
+
+            /* Shop-by-category */
     
         .shop-by-category .section-title h1 {
             font-size: 2rem;
@@ -749,13 +755,11 @@ html, body {
             grid-template-rows: repeat(4, minmax(100px, 249px));
         }
     
-        .header-middle > .container {
-            padding: 0;
-        }
-    
         .shop-by-category .section-title p {
             display: block;
         }
+
+            /* New-arrivals */
     
         .new-arrivals .section-title img {
             display: inline;
@@ -774,6 +778,8 @@ html, body {
     
     
     @media (min-width: 768px) {
+
+            /* Header */
     
         .header-middle .header-middle-icons .user-icons:nth-child(2) {
             display: inline;
@@ -798,6 +804,8 @@ html, body {
         .header-bottom .dropdown-browse .browse-menu {
             width: 18rem;
         }
+
+            /* Showcase */
     
         .showcase > .container {
             justify-content: space-between;
@@ -822,6 +830,8 @@ html, body {
         .showcase .showcase-image{
             display: block;
         }
+
+            /* Website-info */
     
         .website-info .website-info-box {
             padding: 0.3rem 0.3rem;
@@ -832,6 +842,8 @@ html, body {
             margin-right: 0.5rem;
     
         }
+
+            /* Shop-by-category */
     
         .shop-by-category .section-title h1 {
             font-size: 3rem;
@@ -840,6 +852,8 @@ html, body {
         .shop-by-category .section-title p {
             font-size: var(--font-size-16);
         }
+
+            /* New-arrivals */
     
         .new-arrivals .section-title h1 {
             font-size: 3rem;
@@ -848,6 +862,8 @@ html, body {
         .new-arrivals .section-title p {
             font-size: 1.33rem;
         }
+
+            /* Form */
 
         .signup-signin .container {
             grid-template-columns: 1fr 1fr;
@@ -864,6 +880,8 @@ html, body {
     }
     
     @media (min-width: 992px) {
+
+            /* Header */
     
         .header-top > .container {
             justify-content: space-between;
@@ -872,6 +890,8 @@ html, body {
         .header-top .website-links {
             display: inline;
         }
+
+            /* Showcase */
     
         .showcase .showcase-body h1 {
             font-size: var(--font-size-60);
@@ -885,6 +905,8 @@ html, body {
             font-size: 1rem;
     
         }
+
+            /* Website-info */
     
         .website-info > .container {
             padding-top: 4rem;
@@ -904,6 +926,8 @@ html, body {
             margin: 0;
             margin-right: 1rem;   
         }
+
+            /* Shop-by-category */
     
         .shop-by-category .grid {
             grid-template-columns: repeat(5, minmax(100px, 249px));
@@ -945,6 +969,8 @@ html, body {
             grid-row: 3 / -1;
         }
 
+            /* Form */
+
         .form-theme .card .card-body .login-links a {
             font-size: 1rem;
         }
@@ -956,14 +982,20 @@ html, body {
     }
     
     @media (min-width: 1200px) {
+
+            /* Header */
     
         .header-middle .search-bar {
             display: inline;
         }
+
+            /* Website-info */
     
         .website-info .website-info-box p {
             font-size: 0.9rem;
         }
+
+            /* Shop-by-category */
     
         .shop-by-category .grid {
             grid-template-columns: repeat(5, minmax(100px, 249px));
@@ -1003,6 +1035,8 @@ html, body {
             grid-column: 5 / -1;
             grid-row: 3 / -1;
         }
+
+            /* New-arrivals */
     
         .new-arrivals-cards .container {
             display: flex;
@@ -1016,6 +1050,9 @@ html, body {
     }
     
     @media (min-width: 1400px) {
+
+            /* Website-info */
+
         .website-info .website-info-box {
             padding: 1rem 1.5rem 1rem 1.5rem;
         }
