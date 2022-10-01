@@ -62,6 +62,7 @@ html, body {
     font-weight: var(--font-weight-medium);
     border-radius: var(--border-radius-medium);
     padding: 0.8rem 1.5rem;
+    transition: 0.2s ease-in-out;
 
 }
 
@@ -910,7 +911,7 @@ html, body {
                 text-align: center;
             }
 
-                .flash-sale-button > .button-theme-light:hover {
+                .flash-sale-button .button-theme-light:hover {
                     background-color: var(--color-theme);
                 }
 

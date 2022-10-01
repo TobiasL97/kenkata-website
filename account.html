@@ -117,14 +117,26 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">Login</h1>
-                    <form id="signin-form">
+                    <form id="signin-form" novalidate>
                         <div class="my-4">
                             <label for="signin_email">Email <span class="required">*</span></label>
-                            <input id="signin_email" type="email" title="Ange en korrekt Email-address!" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" autocomplete="email" required> 
+                            <input id="signin_email" class="form-control is-invalid is-valid" type="email" title="Ange en korrekt Email-address!" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" autocomplete="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email!
+                            </div>
+                            <div class="valid-feedback">
+                                Valid email!
+                            </div> 
                         </div>
                         <div class="mb-4">
                             <label for="signin_password">Password <span class="required">*</span></label>
-                            <input id="signin_password" title="Lösenordet måste vara minst 8 tecken och innehålla minst en stor bokstav och minst en siffra!" pattern="[a-zA-Z0-9]{8}" type="password" autocomplete="current-password" required> 
+                            <input id="signin_password" class="form-control is-invalid is-valid"type="password" autocomplete="current-password" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid password. The password must contain at least 8 characters, a capital letter and a number!
+                            </div>
+                            <div class="valid-feedback">
+                                Valid password!
+                            </div> 
                         </div>
                         <div class="mb-4 d-grid">
                             <button type="submit" class="btn btn-lg button-theme">LOG IN</button>
@@ -161,22 +173,40 @@
                     <h1 class="card-title">Register</h1>
                     <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
                     
-                    <form id="signup-form">
+                    <form id="signup-form" novalidate>
                         <div class="mb-4">
                             <label for="signup_firstName">Firstname <span class="required">*</span></label>
-                            <input id="signup_firstName" type="text" autocomplete="given-name" required> 
+                            <input id="signup_firstName" class="form-control is-invalid is-valid" type="text" autocomplete="given-name" required>
+                            <div class="invalid-feedback">
+                                Please enter your firstname
+                            </div>
                         </div>
                         <div class="mb-4">
                             <label for="signup_lastName">Lastname <span class="required">*</span></label>
-                            <input id="signup_lastName" type="text" autocomplete="given-name" required> 
+                            <input id="signup_lastName" class="form-control is-invalid is-valid" type="text" autocomplete="given-name" required>
+                            <div class="invalid-feedback">
+                                Please enter your lastname
+                            </div> 
                         </div>
                         <div class="mb-4">
                             <label for="signup_email">Email <span class="required">*</span></label>
-                            <input id="signup_email" type="email" autocomplete="email" required> 
+                            <input id="signup_email" class="form-control is-invalid is-valid" type="email" autocomplete="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email!
+                            </div>
+                            <div class="valid-feedback">
+                                Valid email!
+                            </div> 
                         </div>
                         <div class="mb-4">
                             <label for="signup_password">Password <span class="required">*</span></label>
-                            <input id="signup_password" title="Lösenordet måste innehålla minst 8 tecken" pattern="[a-zA-Z0-9]{8}" type="password" autocomplete="current-password" required> 
+                            <input id="signup_password" class="form-control is-invalid is-valid" type="password" autocomplete="current-password" required> 
+                            <div class="invalid-feedback">
+                                Please enter a valid password. The password must contain at least 8 characters, a capital letter and a number!
+                            </div>
+                            <div class="valid-feedback">
+                                Valid password!
+                            </div>
                         </div>
                         <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
                         <div class="mb-4 d-grid">

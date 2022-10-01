@@ -145,7 +145,6 @@ html, body {
     margin: 0;
 }
 
-
         .form-theme .card {
         padding: 1.5rem;
         border-radius: var(--border-radius-small);
@@ -181,26 +180,30 @@ html, body {
             font-size: 0.7rem;
         }
 
-.form-theme input[type=checkbox] {
-    height: 15px;
-    width: 15px;
-    margin-right: 0.5rem;
-}
+    .form-theme input[type=checkbox] {
+        height: 15px;
+        width: 15px;
+        margin-right: 0.5rem;
+    }
 
-.form-theme input[type=text],
-.form-theme input[type=email],
-.form-theme input[type=password] {
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 0.5rem;
-    margin: 0.4rem 0;
-}
+    .form-theme input[type=text],
+    .form-theme input[type=email],
+    .form-theme input[type=password] {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 0.5rem;
+        margin: 0.4rem 0;
+    }
 
     .form-theme input:focus {
         outline: 0;
         box-shadow: 0 0 2px 0px var(--color-theme-dark);
+    }
+
+    .form-theme .valid-feedback {
+        display: none;
     }
 
 
